@@ -2603,7 +2603,7 @@ update_v2ray() {
 	fi
 }
 update_v2ray.sh() {
-	local latest_version=$(curl -s -L https://raw.githubusercontent.com/233boy/v2ray/master/v2ray.old.sh | grep '_version' -m1 | cut -d\" -f2)
+	local latest_version=$(curl -s -L https://raw.githubusercontent.com/reghpc/v2ray/master/v2ray.old.sh | grep '_version' -m1 | cut -d\" -f2)
 	if [[ $latest_version == $_version ]]; then
 		echo
 		echo -e "$green 木有发现新版本 $none"
